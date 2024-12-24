@@ -1,0 +1,454 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/sekiro.gif) no-repeat center center fixed; 
+    background-size: cover; 
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    transition: color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.logo h1:hover {
+    color: #b30101;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+    color: #b30101;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #b30101;
+    box-sizing: border-box;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.user-info button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color:#b30101;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.user-info button:hover {
+    background-color: #b30101;
+}
+
+main {
+    flex: 1;
+    padding: 80px 20px 100px 20px;
+    transition: padding 0.3s ease;
+    box-sizing: border-box;
+}
+
+.black-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+footer .contact-info {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+footer .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer .contact-info ul li {
+    display: inline;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+footer .contact-info ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    box-sizing: border-box;
+}
+
+footer .contact-info ul li a:hover {
+    text-decoration: underline;
+    color: #b30101;
+}
+
+.slider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.slider button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider #prev-btn {
+    left: 10px;
+    box-sizing: border-box;
+}
+
+.slider #next-btn {
+    right: 10px;
+    box-sizing: border-box;
+}
+
+.slider #slide-info {
+    margin-top: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+form:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+form div {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #b30101;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #b30101;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+form button:hover {
+    background-color: #b30101;
+}
+
+.error {
+    color: #b30101;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+#test-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+#test-result .correct {
+    color: #00ff00;
+    box-sizing: border-box;
+}
+
+#test-result .incorrect {
+    color: #b30101;
+    box-sizing: border-box;
+}
+
+#test-result button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #b30101;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#test-result button:hover {
+    background-color: #b30101;
+}
+
+#term-description {
+    margin-top: 20px;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+#term-description:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+#term-description p {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#dictionary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#dictionary-list li {
+    padding: 10px;
+    background-color: #222222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+#dictionary-list li:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+#dictionary-list li.active {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        padding: 100px 10px 100px 10px;
+        box-sizing: border-box;
+    }
+
+    .slider img {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    form {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #dictionary-list li {
+        padding: 8px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+    }
+
+    #term-description {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #search {
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    #test-result {
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    #test-result button {
+        padding: 8px 15px;
+        box-sizing: border-box;
+    }
+}
+
+#logout-btn-profile {
+    padding: 10px 20px; 
+    background-color: #b30101; 
+    border: none; 
+    color: #ffffff; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-sizing: border-box;
+}
+
+#logout-btn-profile:hover {
+    background-color: #b30101; 
+    transform: scale(1.05); 
+}
+
+#logout-btn-profile:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); 
+    box-sizing: border-box;
+}
